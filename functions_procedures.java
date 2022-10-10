@@ -17,80 +17,14 @@ public class functions_procedures {
   */
   public static void mainsplgauss() {
     Scanner scan = new Scanner(System.in);
-    // System.out.print("Jumlah baris: ");
-    // int baris = scan.nextInt();
-    //
-    // System.out.print("Jumlah kolom: ");
-    // int kolom = scan.nextInt();
+    System.out.print("Jumlah baris: ");
+    int baris = scan.nextInt();
 
-    int baris = 7;
-    int kolom = 8;
+    System.out.print("Jumlah kolom: ");
+    int kolom = scan.nextInt();
+
     float[][] Matrix = new float[baris][kolom];
-    // 1
-    Matrix[0][0] = 1;
-    Matrix[0][1] = 2;
-    Matrix[0][2] = 3;
-    Matrix[0][3] = 4;
-    Matrix[0][4] = 2;
-    Matrix[0][5] = 3;
-    Matrix[0][6] = 4;
-    Matrix[0][7] = 4;
-    // 2
-    Matrix[1][0] = 1;
-    Matrix[1][1] = 2;
-    Matrix[1][2] = 3;
-    Matrix[1][3] = 4;
-    Matrix[1][4] = 2;
-    Matrix[1][5] = 6;
-    Matrix[1][6] = 7;
-    Matrix[1][7] = 4;
-    // 3
-    Matrix[2][0] = 3;
-    Matrix[2][1] = 5;
-    Matrix[3][2] = 3;
-    Matrix[2][3] = 4;
-    Matrix[2][4] = 2;
-    Matrix[2][5] = 6;
-    Matrix[2][6] = 4;
-    Matrix[2][7] = 6;
-    // 4
-    Matrix[3][0] = 1;
-    Matrix[3][1] = 5;
-    Matrix[3][2] = 3;
-    Matrix[3][3] = 4;
-    Matrix[3][4] = 4;
-    Matrix[3][5] = 3;
-    Matrix[3][6] = 6;
-    Matrix[3][7] = 4;
-    // 5
-    Matrix[4][0] = 1;
-    Matrix[4][1] = 4;
-    Matrix[4][2] = 3;
-    Matrix[4][3] = 4;
-    Matrix[4][4] = 2;
-    Matrix[4][5] = 6;
-    Matrix[4][6] = 4;
-    Matrix[4][7] = 4;
-    // 6
-    Matrix[5][0] = 1;
-    Matrix[5][1] = 2;
-    Matrix[5][2] = 3;
-    Matrix[5][3] = 8;
-    Matrix[5][4] = 2;
-    Matrix[5][5] = 3;
-    Matrix[5][6] = 8;
-    Matrix[5][7] = 4;
-    // 7
-    Matrix[6][0] = 1;
-    Matrix[6][1] = 4;
-    Matrix[6][2] = 3;
-    Matrix[6][3] = 6;
-    Matrix[6][4] = 5;
-    Matrix[6][5] = 3;
-    Matrix[6][6] = 6;
-    Matrix[6][7] = 4;
-
-    // inputMatrixdata(scan, Matrix, baris, kolom);
+    inputMatrixdata(scan, Matrix, baris, kolom);
 
     if (kolom < baris) {
       System.out.println(
@@ -116,79 +50,14 @@ public class functions_procedures {
 
   public static void mainsplgaussjordan() {
     Scanner scan = new Scanner(System.in);
-    // System.out.print("Jumlah baris: ");
-    // int baris = scan.nextInt();
+    System.out.print("Jumlah baris: ");
+    int baris = scan.nextInt();
 
-    // System.out.print("Jumlah kolom: ");
-    // int kolom = scan.nextInt();
+    System.out.print("Jumlah kolom: ");
+    int kolom = scan.nextInt();
 
-    int baris = 7;
-    int kolom = 8;
     float[][] Matrix = new float[baris][kolom];
-    // 1
-    Matrix[0][0] = 1;
-    Matrix[0][1] = 2;
-    Matrix[0][2] = 3;
-    Matrix[0][3] = 4;
-    Matrix[0][4] = 2;
-    Matrix[0][5] = 3;
-    Matrix[0][6] = 4;
-    Matrix[0][7] = 4;
-    // 2
-    Matrix[1][0] = 1;
-    Matrix[1][1] = 2;
-    Matrix[1][2] = 3;
-    Matrix[1][3] = 4;
-    Matrix[1][4] = 2;
-    Matrix[1][5] = 6;
-    Matrix[1][6] = 7;
-    Matrix[1][7] = 4;
-    // 3
-    Matrix[2][0] = 3;
-    Matrix[2][1] = 5;
-    Matrix[3][2] = 3;
-    Matrix[2][3] = 4;
-    Matrix[2][4] = 2;
-    Matrix[2][5] = 6;
-    Matrix[2][6] = 4;
-    Matrix[2][7] = 6;
-    // 4
-    Matrix[3][0] = 1;
-    Matrix[3][1] = 5;
-    Matrix[3][2] = 3;
-    Matrix[3][3] = 4;
-    Matrix[3][4] = 4;
-    Matrix[3][5] = 3;
-    Matrix[3][6] = 6;
-    Matrix[3][7] = 4;
-    // 5
-    Matrix[4][0] = 1;
-    Matrix[4][1] = 4;
-    Matrix[4][2] = 3;
-    Matrix[4][3] = 4;
-    Matrix[4][4] = 2;
-    Matrix[4][5] = 6;
-    Matrix[4][6] = 4;
-    Matrix[4][7] = 4;
-    // 6
-    Matrix[5][0] = 1;
-    Matrix[5][1] = 2;
-    Matrix[5][2] = 3;
-    Matrix[5][3] = 8;
-    Matrix[5][4] = 2;
-    Matrix[5][5] = 3;
-    Matrix[5][6] = 8;
-    Matrix[5][7] = 4;
-    // 7
-    Matrix[6][0] = 1;
-    Matrix[6][1] = 4;
-    Matrix[6][2] = 3;
-    Matrix[6][3] = 6;
-    Matrix[6][4] = 5;
-    Matrix[6][5] = 3;
-    Matrix[6][6] = 6;
-    Matrix[6][7] = 4;
-    // inputMatrixdata(scan, Matrix, baris, kolom);
+    inputMatrixdata(scan, Matrix, baris, kolom);
 
     if (kolom < baris) {
       System.out.println(
@@ -468,4 +337,4 @@ public class functions_procedures {
       System.out.print("\n");
     }
   }
-}  
+}
